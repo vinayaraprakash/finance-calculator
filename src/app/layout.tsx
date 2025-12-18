@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 
 export const metadata = {
   title: "Finance Calculator",
@@ -17,11 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5649172375396609"
-     crossorigin="anonymous"></script>
-      </head>
+  
       <body>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5649172375396609"
+     crossOrigin="anonymous"/>
         {/* NAVBAR */}
         <Navbar />
 
