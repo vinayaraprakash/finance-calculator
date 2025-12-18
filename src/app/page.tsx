@@ -59,7 +59,7 @@ const tools = [
   {
     title: "Salary Breakup",
     desc: "Understand CTC & take-home",
-    href: "/salary",
+    href: "/salary-breakup",
     icon: Wallet,
   },
   {
