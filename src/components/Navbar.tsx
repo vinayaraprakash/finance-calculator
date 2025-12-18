@@ -11,6 +11,7 @@ import {
   CreditCard,
   Wallet,
   PiggyBank,
+  BookOpen,
 } from "lucide-react";
 
 const navItems = [
@@ -21,6 +22,7 @@ const navItems = [
   { name: "Salary", href: "/salary-breakup", icon: Wallet },
   { name: "NPS/PPF/Gratuity", href: "/ppf-nps-gra-calculator", icon: Wallet },
   { name: "Property ROI", href: "/property-roi-calculator", icon:PiggyBank  },
+  { name: "Finance Guide", href: "/finance-guide", icon:BookOpen },
 ];
 
 const hideBreadcrumbs = [
@@ -229,6 +231,11 @@ export default function Navbar() {
               {pathname === "/property-roi-calculator" && (
               <span className="text-gray-800 font-semibold">
                 Property ROI
+              </span>
+            )}
+             {pathname === "/finance-guide" && (
+              <span className="text-gray-800 font-semibold">
+                Finance Guide
               </span>
             )}
           </div>
