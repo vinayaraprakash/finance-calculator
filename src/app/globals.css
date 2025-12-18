@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* =========================
+   ROOT THEME
+========================= */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* =========================
+   HERO BLUE (CARDS ONLY)
+========================= */
+.hero-blue {
+  background: linear-gradient(
+    180deg,
+    #081c3a 0%,
+    #0b2c5d 50%,
+    #0b1f3a 100%
+  );
+}
+
+/* =========================
+   HOME TOOL CARD
+========================= */
+.card-hero {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-hero:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 30px rgba(8, 28, 58, 0.25),
+    0 0 0 1px rgba(11, 44, 93, 0.15);
+}
+
+/* Icon animation */
+.card-hero svg {
+  transition: transform 0.25s ease;
+}
+
+.card-hero:hover svg {
+  transform: scale(1.1);
+}
+
+/* Keyboard focus (SEO + accessibility) */
+.card-hero:focus-within {
+  outline: 3px solid rgba(11, 44, 93, 0.35);
+  outline-offset: 4px;
+}
+
+
+.text-hero-blue {
+  color: #0b2c5d;
+}
+
+/* HERO BLUE HOVER */
+.hover-hero-blue:hover {
+  color: #0b2c5d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out;
+}
