@@ -70,7 +70,7 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
   return (
     <>
       {/* PAGE WRAPPER */}
-      <div className="max-w-2xl mx-auto px-4  dark:text-gray-100">
+      <div className="max-w-2xl mx-auto px-4 ">
 
         {/* HEADER */}
         <section className="hero-blue rounded-2xl mb-10">
