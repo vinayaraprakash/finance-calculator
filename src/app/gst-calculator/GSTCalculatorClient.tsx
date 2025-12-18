@@ -70,7 +70,7 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
   return (
     <>
       {/* PAGE WRAPPER */}
-      <div className="max-w-2xl mx-auto px-4 text-gray-900 dark:text-gray-100">
+      <div className="max-w-2xl mx-auto px-4  dark:text-gray-100">
 
         {/* HEADER */}
         <section className="hero-blue rounded-2xl mb-10">
@@ -198,7 +198,7 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
   <div className="space-y-3 text-sm">
     {/* Base */}
     <div className="flex justify-between">
-      <span className="text-gray-600">Base Amount</span>
+      <span >Base Amount</span>
       <span className="font-medium">
         {formatINR(result?.baseAmount ?? 0)}
       </span>
@@ -207,7 +207,7 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
     {/* Taxes */}
     {mode === "igst" ? (
       <div className="flex justify-between">
-        <span className="text-gray-600">IGST ({rate}%)</span>
+        <span >IGST ({rate}%)</span>
         <span className="font-medium">
           {formatINR(result?.igst ?? 0)}
         </span>
@@ -215,13 +215,13 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
     ) : (
       <>
         <div className="flex justify-between">
-          <span className="text-gray-600">CGST ({rate / 2}%)</span>
+          <span>CGST ({rate / 2}%)</span>
           <span className="font-medium">
             {formatINR(result?.cgst ?? 0)}
           </span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-600">SGST ({rate / 2}%)</span>
+          <span>SGST ({rate / 2}%)</span>
           <span className="font-medium">
             {formatINR(result?.sgst ?? 0)}
           </span>
@@ -248,13 +248,13 @@ Total: ${formatINR(result?.totalAmount ?? 0)}`;
   <div className="flex gap-3 mt-4">
     <button
       onClick={copyBreakdown}
-      className="px-4 py-2 text-sm border rounded-lg hover:bg-gray-50"
+      className="px-4 py-2 text-sm border rounded-lg"
     >
       📋 Copy
     </button>
     <button
       onClick={shareCalculation}
-      className="px-4 py-2 text-sm border rounded-lg hover:bg-gray-50"
+      className="px-4 py-2 text-sm border rounded-lg hover"
     >
       🔗 Share
     </button>
